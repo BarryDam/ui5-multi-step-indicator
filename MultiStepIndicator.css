@@ -1,0 +1,65 @@
+.bdMultiStepIndicator-wrapper {
+	width      : 100%;
+}
+ol.bdMultiStepIndicator {
+	padding		: 0;
+	margin		: 0 0 2rem 0;
+	display		: inline-block;
+}
+.bdMultiStepIndicator-wrapper ol.bdMultiStepIndicator {
+	margin		: 0 auto 2rem auto;
+}
+ol.bdMultiStepIndicator:after {
+	content	: "";
+  	display	: table;
+  	clear	: both;
+}
+ol.bdMultiStepIndicator li.bdMultiStepIndicatorItem {
+	position : relative;
+	margin   : 0px;
+	display  : inline-block;
+	float    : left;
+}
+ol.bdMultiStepIndicator li.bdMultiStepIndicatorItem:first-child{
+	margin-right : 2px;
+}
+ol.bdMultiStepIndicator li.bdMultiStepIndicatorItem:last-child{
+	margin-left : 2px;
+}
+ol.bdMultiStepIndicator li.bdMultiStepIndicatorItem:not(first-child):not(last-child){
+	margin-left  : 2px;
+	margin-right : 2px;
+}
+ol.bdMultiStepIndicator li.bdMultiStepIndicatorItem:first-child .bdMultiStepIndicatorItemBar {
+	border-top-left-radius    : 5px;
+	border-bottom-left-radius : 5px;
+}
+ol.bdMultiStepIndicator li.bdMultiStepIndicatorItem:last-child .bdMultiStepIndicatorItemBar {
+	border-top-right-radius    : 5px;
+	border-bottom-right-radius : 5px;
+}
+ol.bdMultiStepIndicator li.bdMultiStepIndicatorItem:not(first-child):not(last-child) .bdMultiStepIndicatorItemBar {
+	border-radius : 0;
+}
+li.bdMultiStepIndicatorItem {
+	list-style 	: none;
+	font-size	: 0.875rem;
+}
+li.bdMultiStepIndicatorItem .bdMultiStepIndicatorItemBar {
+	border-radius : 5px;
+}
+li.bdMultiStepIndicatorItem.bdMultiStepIndicatorItemCompleted .bdMultiStepIndicatorItemBar {
+	background-color : #2b7c2b;
+}
+li.bdMultiStepIndicatorItem.bdMultiStepIndicatorItemCompleted .bdMultiStepIndicatorItemText {
+	color : #2b7c2b;
+}
+.bdMultiStepIndicatorItemBar {
+	background-color	: #D8D8D8;
+	height				: 10px;
+}
+.bdMultiStepIndicatorItemText {
+	color		: #D8D8D8;
+	text-align	: center ;
+	margin-top	: 10px;
+}
